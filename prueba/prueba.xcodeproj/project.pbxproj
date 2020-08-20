@@ -23,6 +23,7 @@
 		2728AE8B24EE669300302677 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2728AE8A24EE669300302677 /* CoreAssembly.swift */; };
 		2728AE8D24EE676800302677 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2728AE8C24EE676800302677 /* AppAssembly.swift */; };
 		2728AE9524EE6D7C00302677 /* PruebaNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2728AE9424EE6D7C00302677 /* PruebaNavigationController.swift */; };
+		275B50BA24EE700900129071 /* Bundle+Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50B924EE700900129071 /* Bundle+Identifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		2728AE8A24EE669300302677 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
 		2728AE8C24EE676800302677 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		2728AE9424EE6D7C00302677 /* PruebaNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaNavigationController.swift; sourceTree = "<group>"; };
+		275B50B924EE700900129071 /* Bundle+Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Identifiers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,8 +291,17 @@
 		2728AE9724EE6EA700302677 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				275B50B824EE6FEC00129071 /* Bundle */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		275B50B824EE6FEC00129071 /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				275B50B924EE700900129071 /* Bundle+Identifiers.swift */,
+			);
+			path = Bundle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -526,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275B50BA24EE700900129071 /* Bundle+Identifiers.swift in Sources */,
 				2728AE8B24EE669300302677 /* CoreAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
