@@ -24,7 +24,8 @@ internal final class PruebaNavigationController: UINavigationController {
     private func setup() {
         
         self.delegate = self
-
+        
+        navigationBar.tintColor = PruebaColors.Primary.blueOne
         
     }
     
@@ -39,5 +40,7 @@ extension PruebaNavigationController: UINavigationControllerDelegate {
                               willShow viewController: UIViewController,
                               animated: Bool) {
         
+        let item = UIBarButtonItem(title: .empty, style: .plain, target: nil, action: nil)
+        viewController.navigationItem.backBarButtonItem = item
     }
 }

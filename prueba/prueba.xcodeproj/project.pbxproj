@@ -214,8 +214,8 @@
 		2728AE6C24EE636B00302677 /* pruebaCore */ = {
 			isa = PBXGroup;
 			children = (
+				275B50C524EE781A00129071 /* Assembly */,
 				2728AE9624EE6E9D00302677 /* Utils */,
-				2728AE8A24EE669300302677 /* CoreAssembly.swift */,
 				2728AE8924EE64C900302677 /* SupportingFiles */,
 			);
 			path = pruebaCore;
@@ -330,6 +330,14 @@
 				275B50C324EE73C200129071 /* PruebaColors.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		275B50C524EE781A00129071 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				2728AE8A24EE669300302677 /* CoreAssembly.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
