@@ -169,11 +169,11 @@
 		272570B424EE619000770CBC /* prueba */ = {
 			isa = PBXGroup;
 			children = (
+				2728AE8E24EE686400302677 /* Resources */,
 				272570B524EE619000770CBC /* AppDelegate.swift */,
 				272570B724EE619000770CBC /* SceneDelegate.swift */,
 				272570B924EE619000770CBC /* ViewController.swift */,
 				272570BB24EE619000770CBC /* Main.storyboard */,
-				272570BE24EE619200770CBC /* Assets.xcassets */,
 				272570C024EE619200770CBC /* LaunchScreen.storyboard */,
 				272570C324EE619200770CBC /* Info.plist */,
 				2728AE8C24EE676800302677 /* AppAssembly.swift */,
@@ -224,6 +224,14 @@
 				2728AE6E24EE636B00302677 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2728AE8E24EE686400302677 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				272570BE24EE619200770CBC /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -648,7 +656,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = es.carlescanadastorrents.prueba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -666,7 +674,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = es.carlescanadastorrents.prueba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
