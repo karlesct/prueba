@@ -24,6 +24,8 @@
 		2728AE8D24EE676800302677 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2728AE8C24EE676800302677 /* AppAssembly.swift */; };
 		2728AE9524EE6D7C00302677 /* PruebaNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2728AE9424EE6D7C00302677 /* PruebaNavigationController.swift */; };
 		275B50BA24EE700900129071 /* Bundle+Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50B924EE700900129071 /* Bundle+Identifiers.swift */; };
+		275B50BD24EE712500129071 /* String+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50BC24EE712500129071 /* String+Empty.swift */; };
+		275B50BF24EE716400129071 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50BE24EE716400129071 /* String+Localized.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		2728AE8C24EE676800302677 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		2728AE9424EE6D7C00302677 /* PruebaNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaNavigationController.swift; sourceTree = "<group>"; };
 		275B50B924EE700900129071 /* Bundle+Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Identifiers.swift"; sourceTree = "<group>"; };
+		275B50BC24EE712500129071 /* String+Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Empty.swift"; sourceTree = "<group>"; };
+		275B50BE24EE716400129071 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +295,7 @@
 		2728AE9724EE6EA700302677 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				275B50BB24EE710E00129071 /* Strings */,
 				275B50B824EE6FEC00129071 /* Bundle */,
 			);
 			path = Extensions;
@@ -302,6 +307,15 @@
 				275B50B924EE700900129071 /* Bundle+Identifiers.swift */,
 			);
 			path = Bundle;
+			sourceTree = "<group>";
+		};
+		275B50BB24EE710E00129071 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				275B50BC24EE712500129071 /* String+Empty.swift */,
+				275B50BE24EE716400129071 /* String+Localized.swift */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,6 +552,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				275B50BA24EE700900129071 /* Bundle+Identifiers.swift in Sources */,
+				275B50BD24EE712500129071 /* String+Empty.swift in Sources */,
+				275B50BF24EE716400129071 /* String+Localized.swift in Sources */,
 				2728AE8B24EE669300302677 /* CoreAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
