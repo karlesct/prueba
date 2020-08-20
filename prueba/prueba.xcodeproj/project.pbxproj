@@ -169,14 +169,14 @@
 		272570B424EE619000770CBC /* prueba */ = {
 			isa = PBXGroup;
 			children = (
+				2728AE8F24EE68E000302677 /* SupportingFiles */,
 				2728AE8E24EE686400302677 /* Resources */,
 				272570B524EE619000770CBC /* AppDelegate.swift */,
+				2728AE8C24EE676800302677 /* AppAssembly.swift */,
 				272570B724EE619000770CBC /* SceneDelegate.swift */,
 				272570B924EE619000770CBC /* ViewController.swift */,
 				272570BB24EE619000770CBC /* Main.storyboard */,
 				272570C024EE619200770CBC /* LaunchScreen.storyboard */,
-				272570C324EE619200770CBC /* Info.plist */,
-				2728AE8C24EE676800302677 /* AppAssembly.swift */,
 			);
 			path = prueba;
 			sourceTree = "<group>";
@@ -232,6 +232,14 @@
 				272570BE24EE619200770CBC /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2728AE8F24EE68E000302677 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				272570C324EE619200770CBC /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -648,7 +656,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = prueba/Info.plist;
+				INFOPLIST_FILE = prueba/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -666,7 +674,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = prueba/Info.plist;
+				INFOPLIST_FILE = prueba/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
