@@ -21,6 +21,7 @@
 		2728AE8024EE636C00302677 /* pruebaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2728AE6B24EE636B00302677 /* pruebaCore.framework */; };
 		2728AE8124EE636C00302677 /* pruebaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2728AE6B24EE636B00302677 /* pruebaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2728AE8B24EE669300302677 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2728AE8A24EE669300302677 /* CoreAssembly.swift */; };
+		2728AE8D24EE676800302677 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2728AE8C24EE676800302677 /* AppAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		2728AE7A24EE636C00302677 /* pruebaCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaCoreTests.swift; sourceTree = "<group>"; };
 		2728AE7C24EE636C00302677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2728AE8A24EE669300302677 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
+		2728AE8C24EE676800302677 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				272570BE24EE619200770CBC /* Assets.xcassets */,
 				272570C024EE619200770CBC /* LaunchScreen.storyboard */,
 				272570C324EE619200770CBC /* Info.plist */,
+				2728AE8C24EE676800302677 /* AppAssembly.swift */,
 			);
 			path = prueba;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				272570BA24EE619000770CBC /* ViewController.swift in Sources */,
+				2728AE8D24EE676800302677 /* AppAssembly.swift in Sources */,
 				272570B624EE619000770CBC /* AppDelegate.swift in Sources */,
 				272570B824EE619000770CBC /* SceneDelegate.swift in Sources */,
 			);
