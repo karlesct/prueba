@@ -6,8 +6,21 @@
 //  Copyright © 2020 carlescanadastorrents. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public final class CoreAssembly {
+    
+    // MARK: - Fields
+    private let navigationController: UINavigationController
+    
+    // MARK: - Properties
+    
+    public private(set) lazy var firstAssembly = FirstAssembly(navigationController: navigationController)
+    
+    // MARK: - Init
+    public init(navigationController: UINavigationController) {
+
+        self.navigationController = navigationController
+    }
     
 }
