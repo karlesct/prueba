@@ -29,6 +29,7 @@
 		275B50C224EE737400129071 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50C124EE737400129071 /* UIColor+Hex.swift */; };
 		275B50C424EE73C200129071 /* PruebaColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50C324EE73C200129071 /* PruebaColors.swift */; };
 		275B50CB24EE813400129071 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50CA24EE813400129071 /* DocumentPicker.swift */; };
+		275B50D024EEB0CD00129071 /* LineReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50CF24EEB0CD00129071 /* LineReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		275B50C124EE737400129071 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		275B50C324EE73C200129071 /* PruebaColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaColors.swift; sourceTree = "<group>"; };
 		275B50CA24EE813400129071 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		275B50CF24EEB0CD00129071 /* LineReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				275B50CD24EE940900129071 /* Picker */,
+				275B50CE24EEB08D00129071 /* Reader */,
 				2728AE9724EE6EA700302677 /* Extensions */,
 			);
 			path = Utils;
@@ -341,6 +344,14 @@
 				275B50CA24EE813400129071 /* DocumentPicker.swift */,
 			);
 			path = Picker;
+			sourceTree = "<group>";
+		};
+		275B50CE24EEB08D00129071 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				275B50CF24EEB0CD00129071 /* LineReader.swift */,
+			);
+			path = Reader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,6 +592,7 @@
 				275B50BD24EE712500129071 /* String+Empty.swift in Sources */,
 				275B50BF24EE716400129071 /* String+Localized.swift in Sources */,
 				2728AE8B24EE669300302677 /* CoreAssembly.swift in Sources */,
+				275B50D024EEB0CD00129071 /* LineReader.swift in Sources */,
 				275B50C424EE73C200129071 /* PruebaColors.swift in Sources */,
 				275B50C224EE737400129071 /* UIColor+Hex.swift in Sources */,
 			);
