@@ -26,6 +26,8 @@
 		275B50BA24EE700900129071 /* Bundle+Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50B924EE700900129071 /* Bundle+Identifiers.swift */; };
 		275B50BD24EE712500129071 /* String+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50BC24EE712500129071 /* String+Empty.swift */; };
 		275B50BF24EE716400129071 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50BE24EE716400129071 /* String+Localized.swift */; };
+		275B50C224EE737400129071 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50C124EE737400129071 /* UIColor+Hex.swift */; };
+		275B50C424EE73C200129071 /* PruebaColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50C324EE73C200129071 /* PruebaColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		275B50B924EE700900129071 /* Bundle+Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Identifiers.swift"; sourceTree = "<group>"; };
 		275B50BC24EE712500129071 /* String+Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Empty.swift"; sourceTree = "<group>"; };
 		275B50BE24EE716400129071 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		275B50C124EE737400129071 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		275B50C324EE73C200129071 /* PruebaColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +299,7 @@
 		2728AE9724EE6EA700302677 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				275B50C024EE730200129071 /* Colors */,
 				275B50BB24EE710E00129071 /* Strings */,
 				275B50B824EE6FEC00129071 /* Bundle */,
 			);
@@ -316,6 +321,15 @@
 				275B50BE24EE716400129071 /* String+Localized.swift */,
 			);
 			path = Strings;
+			sourceTree = "<group>";
+		};
+		275B50C024EE730200129071 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				275B50C124EE737400129071 /* UIColor+Hex.swift */,
+				275B50C324EE73C200129071 /* PruebaColors.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -555,6 +569,8 @@
 				275B50BD24EE712500129071 /* String+Empty.swift in Sources */,
 				275B50BF24EE716400129071 /* String+Localized.swift in Sources */,
 				2728AE8B24EE669300302677 /* CoreAssembly.swift in Sources */,
+				275B50C424EE73C200129071 /* PruebaColors.swift in Sources */,
+				275B50C224EE737400129071 /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
