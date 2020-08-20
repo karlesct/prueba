@@ -20,6 +20,7 @@
 		2728AE7D24EE636C00302677 /* pruebaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 2728AE6D24EE636B00302677 /* pruebaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2728AE8024EE636C00302677 /* pruebaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2728AE6B24EE636B00302677 /* pruebaCore.framework */; };
 		2728AE8124EE636C00302677 /* pruebaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2728AE6B24EE636B00302677 /* pruebaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2728AE8B24EE669300302677 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2728AE8A24EE669300302677 /* CoreAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		2728AE7324EE636B00302677 /* pruebaCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pruebaCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2728AE7A24EE636C00302677 /* pruebaCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaCoreTests.swift; sourceTree = "<group>"; };
 		2728AE7C24EE636C00302677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2728AE8A24EE669300302677 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 		2728AE6C24EE636B00302677 /* pruebaCore */ = {
 			isa = PBXGroup;
 			children = (
+				2728AE8A24EE669300302677 /* CoreAssembly.swift */,
 				2728AE8924EE64C900302677 /* SupportingFiles */,
 			);
 			path = pruebaCore;
@@ -349,6 +352,7 @@
 					};
 					2728AE6A24EE636B00302677 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					2728AE7224EE636B00302677 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -450,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2728AE8B24EE669300302677 /* CoreAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +633,7 @@
 		272570DD24EE619200770CBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = prueba/Info.plist;
@@ -645,6 +651,7 @@
 		272570DE24EE619200770CBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = prueba/Info.plist;
@@ -742,6 +749,7 @@
 		2728AE8324EE636C00302677 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -758,6 +766,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = es.carlescanadastorrents.pruebaCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -768,6 +777,7 @@
 		2728AE8424EE636C00302677 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
