@@ -22,6 +22,7 @@
 		2728AE8124EE636C00302677 /* pruebaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2728AE6B24EE636B00302677 /* pruebaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2728AE8B24EE669300302677 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2728AE8A24EE669300302677 /* CoreAssembly.swift */; };
 		2728AE8D24EE676800302677 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2728AE8C24EE676800302677 /* AppAssembly.swift */; };
+		2728AE9524EE6D7C00302677 /* PruebaNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2728AE9424EE6D7C00302677 /* PruebaNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		2728AE7C24EE636C00302677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2728AE8A24EE669300302677 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
 		2728AE8C24EE676800302677 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
+		2728AE9424EE6D7C00302677 /* PruebaNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,14 +171,14 @@
 		272570B424EE619000770CBC /* prueba */ = {
 			isa = PBXGroup;
 			children = (
+				2728AE9224EE6CF100302677 /* Assembly */,
 				2728AE8F24EE68E000302677 /* SupportingFiles */,
 				2728AE8E24EE686400302677 /* Resources */,
+				2728AE9024EE6CB900302677 /* Utils */,
 				272570B524EE619000770CBC /* AppDelegate.swift */,
-				2728AE8C24EE676800302677 /* AppAssembly.swift */,
 				272570B724EE619000770CBC /* SceneDelegate.swift */,
 				272570B924EE619000770CBC /* ViewController.swift */,
 				272570BB24EE619000770CBC /* Main.storyboard */,
-				272570C024EE619200770CBC /* LaunchScreen.storyboard */,
 			);
 			path = prueba;
 			sourceTree = "<group>";
@@ -202,6 +204,7 @@
 		2728AE6C24EE636B00302677 /* pruebaCore */ = {
 			isa = PBXGroup;
 			children = (
+				2728AE9624EE6E9D00302677 /* Utils */,
 				2728AE8A24EE669300302677 /* CoreAssembly.swift */,
 				2728AE8924EE64C900302677 /* SupportingFiles */,
 			);
@@ -229,6 +232,7 @@
 		2728AE8E24EE686400302677 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2728AE9324EE6D2700302677 /* LaunchScreen */,
 				272570BE24EE619200770CBC /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -240,6 +244,53 @@
 				272570C324EE619200770CBC /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2728AE9024EE6CB900302677 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2728AE9124EE6CC100302677 /* NavigationController */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2728AE9124EE6CC100302677 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				2728AE9424EE6D7C00302677 /* PruebaNavigationController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		2728AE9224EE6CF100302677 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				2728AE8C24EE676800302677 /* AppAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		2728AE9324EE6D2700302677 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				272570C024EE619200770CBC /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		2728AE9624EE6E9D00302677 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2728AE9724EE6EA700302677 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2728AE9724EE6EA700302677 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +500,7 @@
 			files = (
 				272570BA24EE619000770CBC /* ViewController.swift in Sources */,
 				2728AE8D24EE676800302677 /* AppAssembly.swift in Sources */,
+				2728AE9524EE6D7C00302677 /* PruebaNavigationController.swift in Sources */,
 				272570B624EE619000770CBC /* AppDelegate.swift in Sources */,
 				272570B824EE619000770CBC /* SceneDelegate.swift in Sources */,
 			);

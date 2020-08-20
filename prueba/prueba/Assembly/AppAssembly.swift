@@ -6,11 +6,12 @@
 //  Copyright © 2020 carlescanadastorrents. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 internal final class AppAssembly {
     
     // MARK: - Properties
     
+    private(set) lazy var window = UIWindow(frame: UIScreen.main.bounds)
     
 }
