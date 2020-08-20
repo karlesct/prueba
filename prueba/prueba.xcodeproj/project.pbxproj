@@ -30,6 +30,7 @@
 		275B50C424EE73C200129071 /* PruebaColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50C324EE73C200129071 /* PruebaColors.swift */; };
 		275B50CB24EE813400129071 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50CA24EE813400129071 /* DocumentPicker.swift */; };
 		275B50D024EEB0CD00129071 /* LineReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50CF24EEB0CD00129071 /* LineReader.swift */; };
+		275B50D224EEC5EC00129071 /* String+WordAndAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B50D124EEC5EC00129071 /* String+WordAndAppearance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		275B50C324EE73C200129071 /* PruebaColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaColors.swift; sourceTree = "<group>"; };
 		275B50CA24EE813400129071 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
 		275B50CF24EEB0CD00129071 /* LineReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineReader.swift; sourceTree = "<group>"; };
+		275B50D124EEC5EC00129071 /* String+WordAndAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WordAndAppearance.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +327,7 @@
 			children = (
 				275B50BC24EE712500129071 /* String+Empty.swift */,
 				275B50BE24EE716400129071 /* String+Localized.swift */,
+				275B50D124EEC5EC00129071 /* String+WordAndAppearance.swift */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -588,6 +591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				275B50BA24EE700900129071 /* Bundle+Identifiers.swift in Sources */,
+				275B50D224EEC5EC00129071 /* String+WordAndAppearance.swift in Sources */,
 				275B50CB24EE813400129071 /* DocumentPicker.swift in Sources */,
 				275B50BD24EE712500129071 /* String+Empty.swift in Sources */,
 				275B50BF24EE716400129071 /* String+Localized.swift in Sources */,
