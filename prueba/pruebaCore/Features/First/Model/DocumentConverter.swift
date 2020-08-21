@@ -17,7 +17,9 @@ public class DocumentConverters {
         let bodywordAndAppearance = body.wordAndAppearance
            
         for itemWord in bodywordAndAppearance {
-            let item = WordModel(word: itemWord.key, count: itemWord.value)
+            let position = body.lowercased().getIndexOf(text: itemWord.key)
+            
+            let item = WordModel(word: itemWord.key, count: itemWord.value, position: position)
             
             words.append(item)
         }

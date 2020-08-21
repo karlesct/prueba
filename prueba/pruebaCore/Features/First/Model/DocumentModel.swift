@@ -10,11 +10,11 @@ import Foundation
 
 public struct DocumentModel {
     
-    private var name: String
-    private var words: [WordModel]?
+    var name: String
+    var words: [WordModel] = []
     
-    
-    public init(name: String, words: [WordModel]?) {
+    public init(name: String,
+                words: [WordModel]) {
         
         self.name = name
         self.words = words

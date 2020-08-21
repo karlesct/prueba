@@ -10,13 +10,16 @@ import Foundation
 
 public struct WordModel {
     
-    private var word: String
-    private var count: Int
+    var word: String
+    var count: Int
+    var position: Int?
     
-    
-    public init(word: String, count: Int) {
+    public init(word: String,
+                count: Int,
+                position: Int?) {
         
         self.word = word
         self.count = count
+        self.position = position
     }
 }
