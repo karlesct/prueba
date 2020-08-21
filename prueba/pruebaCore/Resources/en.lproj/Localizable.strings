@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  prueba
+
+  Created by Carles Cañadas Torrents on 21/08/2020.
+  Copyright © 2020 carlescanadastorrents. All rights reserved.
+*/
+
+"Position" = "Position";
+"Alfabetically" = "Alfabetically";
+"NumberOfAppearances" = "Appearances";
+"ToStartSelectAFile" = "To start please select a file";
