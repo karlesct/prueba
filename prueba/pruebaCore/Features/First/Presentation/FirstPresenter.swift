@@ -11,6 +11,7 @@ import Foundation
 internal protocol FirstViewProtocol: class {
     var title: String? { get set }
     func setLoading(_ loading: Bool)
+    func isDocumentSelected(selected: Bool)
 }
 
 internal protocol FirstPresenterProtocol: class {
@@ -57,7 +58,14 @@ extension FirstPresenter: DocumentPickerDelegate {
     
     func didPickDocuments(urls: [URL]?) {
         
-        guard let urls = urls else { return }
+        guard let urls = urls else {
+            
+            view?.isDocumentSelected(selected: false)
+            
+            return
+        }
+        
+        view?.isDocumentSelected(selected: true)
         
         urls.forEach { item in
         

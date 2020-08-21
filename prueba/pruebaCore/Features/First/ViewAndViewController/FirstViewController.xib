@@ -9,10 +9,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="pruebaCore" customModuleProvider="target">
             <connections>
+                <outlet property="btnOpenDocuments" destination="nG4-UT-vHx" id="IrQ-O8-1a5"/>
                 <outlet property="sbSearch" destination="1vM-NN-4Lf" id="m3v-Ue-hQ5"/>
                 <outlet property="scFilter" destination="Urk-Bf-2WY" id="6XB-s2-lm8"/>
                 <outlet property="tvTableView" destination="ooc-eK-vpF" id="zn1-YI-AG8"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Wfd-te-qvT"/>
+                <outlet property="vwContainer" destination="cpN-Tc-t7U" id="BtS-Aa-Adp"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -45,6 +47,25 @@
                     <rect key="frame" x="0.0" y="167" width="414" height="695"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpN-Tc-t7U">
+                    <rect key="frame" x="0.0" y="167" width="414" height="695"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nG4-UT-vHx">
+                            <rect key="frame" x="184" y="332.5" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="openDocumentsAction:" destination="-1" eventType="touchUpInside" id="NPR-JC-BG8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nG4-UT-vHx" secondAttribute="trailing" constant="25" id="M4E-8J-UJL"/>
+                        <constraint firstItem="nG4-UT-vHx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cpN-Tc-t7U" secondAttribute="leading" constant="25" id="M86-ql-Jlv"/>
+                        <constraint firstItem="nG4-UT-vHx" firstAttribute="centerX" secondItem="cpN-Tc-t7U" secondAttribute="centerX" id="UoW-Vy-J3j"/>
+                        <constraint firstItem="nG4-UT-vHx" firstAttribute="centerY" secondItem="cpN-Tc-t7U" secondAttribute="centerY" id="a3x-B0-6VV"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
@@ -54,9 +75,13 @@
                 <constraint firstItem="Urk-Bf-2WY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BNl-a2-VkR"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ooc-eK-vpF" secondAttribute="bottom" id="Fvk-0r-yQR"/>
                 <constraint firstItem="ooc-eK-vpF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="HKe-px-n8V"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="cpN-Tc-t7U" secondAttribute="bottom" id="OUs-bH-IwY"/>
+                <constraint firstItem="cpN-Tc-t7U" firstAttribute="top" secondItem="Urk-Bf-2WY" secondAttribute="bottom" id="PRQ-uG-2PA"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ooc-eK-vpF" secondAttribute="trailing" id="WVC-T4-CcY"/>
                 <constraint firstItem="ooc-eK-vpF" firstAttribute="top" secondItem="Urk-Bf-2WY" secondAttribute="bottom" id="d3c-j8-uep"/>
                 <constraint firstItem="1vM-NN-4Lf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="m16-vf-ZNX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cpN-Tc-t7U" secondAttribute="trailing" id="nIN-oV-fPe"/>
+                <constraint firstItem="cpN-Tc-t7U" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="z7n-QC-Qys"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Urk-Bf-2WY" secondAttribute="trailing" id="zrf-FW-f1g"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

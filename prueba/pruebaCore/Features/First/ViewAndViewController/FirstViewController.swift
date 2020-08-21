@@ -16,6 +16,8 @@ internal final class FirstViewController: UIViewController {
     @IBOutlet weak var scFilter: UISegmentedControl!
     @IBOutlet weak var tvTableView: UITableView!
     
+    @IBOutlet weak var vwContainer: UIView!
+    @IBOutlet weak var btnOpenDocuments: UIButton!
     
     // MARK: - Properties
     
@@ -52,6 +54,8 @@ internal final class FirstViewController: UIViewController {
         scFilter.setTitle("Position".localized, forSegmentAt: 0)
         scFilter.setTitle("Alfabetically".localized, forSegmentAt: 1)
         scFilter.setTitle("NumberOfAppearances".localized, forSegmentAt: 2)
+        
+        btnOpenDocuments.setTitle("ToStartSelectAFile".localized, for: .normal)
     }
     
     // MARK: - Actions
@@ -70,6 +74,11 @@ internal final class FirstViewController: UIViewController {
         }
         
     }
+    @IBAction func openDocumentsAction(_ sender: Any) {
+        
+        presenter.didSelectOpenPicker()
+        
+    }
     
 }
 
@@ -79,4 +88,9 @@ extension FirstViewController: FirstViewProtocol {
         
     }
     
+    func isDocumentSelected(selected: Bool) {
+        
+        vwContainer.isHidden = selected
+        
+    }
 }
