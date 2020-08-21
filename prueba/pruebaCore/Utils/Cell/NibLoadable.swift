@@ -13,7 +13,7 @@ public protocol NibLoadable: class {
     static func instantiate() -> Self
 }
 
-public extension NibLoadableView where Self: UIView {
+public extension NibLoadable where Self: UIView {
     static var nibName: String {
         return String(describing: self)
     }
