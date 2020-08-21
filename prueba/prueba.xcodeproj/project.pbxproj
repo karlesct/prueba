@@ -12,6 +12,9 @@
 		2700225D24EFA0A600AFA7A2 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700225C24EFA0A600AFA7A2 /* WordModel.swift */; };
 		2700226024EFAC9300AFA7A2 /* Window+VisibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700225F24EFAC9300AFA7A2 /* Window+VisibleViewController.swift */; };
 		2700226324EFACD300AFA7A2 /* ViewController+GetTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700226224EFACD300AFA7A2 /* ViewController+GetTopViewController.swift */; };
+		2700226624EFB4C200AFA7A2 /* FirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700226524EFB4C200AFA7A2 /* FirstCell.swift */; };
+		2700226924EFB51200AFA7A2 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700226824EFB51200AFA7A2 /* ReusableCell.swift */; };
+		2700226B24EFB54100AFA7A2 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700226A24EFB54100AFA7A2 /* NibLoadable.swift */; };
 		272570B624EE619000770CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272570B524EE619000770CBC /* AppDelegate.swift */; };
 		272570BF24EE619200770CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272570BE24EE619200770CBC /* Assets.xcassets */; };
 		272570C224EE619200770CBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272570C024EE619200770CBC /* LaunchScreen.storyboard */; };
@@ -97,6 +100,9 @@
 		2700225C24EFA0A600AFA7A2 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
 		2700225F24EFAC9300AFA7A2 /* Window+VisibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Window+VisibleViewController.swift"; sourceTree = "<group>"; };
 		2700226224EFACD300AFA7A2 /* ViewController+GetTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+GetTopViewController.swift"; sourceTree = "<group>"; };
+		2700226524EFB4C200AFA7A2 /* FirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCell.swift; sourceTree = "<group>"; };
+		2700226824EFB51200AFA7A2 /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		2700226A24EFB54100AFA7A2 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		272570B224EE619000770CBC /* prueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272570B524EE619000770CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272570BE24EE619200770CBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -186,6 +192,23 @@
 				2700226224EFACD300AFA7A2 /* ViewController+GetTopViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2700226424EFB49F00AFA7A2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2700226524EFB4C200AFA7A2 /* FirstCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2700226724EFB50100AFA7A2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2700226824EFB51200AFA7A2 /* ReusableCell.swift */,
+				2700226A24EFB54100AFA7A2 /* NibLoadable.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		272570A924EE619000770CBC = {
@@ -323,6 +346,7 @@
 		2728AE9624EE6E9D00302677 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2700226724EFB50100AFA7A2 /* Cell */,
 				275B50CD24EE940900129071 /* Picker */,
 				275B50CE24EEB08D00129071 /* Reader */,
 				2728AE9724EE6EA700302677 /* Extensions */,
@@ -415,6 +439,7 @@
 		275B50D624EECDB800129071 /* ViewAndViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2700226424EFB49F00AFA7A2 /* Cells */,
 				275B50DD24EEE36900129071 /* FirstViewController.swift */,
 				275B50DF24EEE49400129071 /* FirstViewController.xib */,
 			);
@@ -682,8 +707,11 @@
 				2728AE8B24EE669300302677 /* CoreAssembly.swift in Sources */,
 				275B50D024EEB0CD00129071 /* LineReader.swift in Sources */,
 				275B50C424EE73C200129071 /* PruebaColors.swift in Sources */,
+				2700226924EFB51200AFA7A2 /* ReusableCell.swift in Sources */,
+				2700226B24EFB54100AFA7A2 /* NibLoadable.swift in Sources */,
 				2700225B24EFA08B00AFA7A2 /* DocumentModel.swift in Sources */,
 				275B50D824EECDF400129071 /* FirstAssembly.swift in Sources */,
+				2700226624EFB4C200AFA7A2 /* FirstCell.swift in Sources */,
 				275B50DC24EEE28B00129071 /* FirstPresenter.swift in Sources */,
 				2700226324EFACD300AFA7A2 /* ViewController+GetTopViewController.swift in Sources */,
 				275B50C224EE737400129071 /* UIColor+Hex.swift in Sources */,
