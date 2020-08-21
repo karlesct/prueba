@@ -23,6 +23,8 @@ internal final class FirstViewController: UIViewController {
     
     private let presenter: FirstPresenterProtocol
     
+    private var documents: [DocumentModel] = []
+    
     // MARK: - Init
     
     init(presenter: FirstPresenterProtocol) {
@@ -56,6 +58,13 @@ internal final class FirstViewController: UIViewController {
         scFilter.setTitle("NumberOfAppearances".localized, forSegmentAt: 2)
         
         btnOpenDocuments.setTitle("ToStartSelectAFile".localized, for: .normal)
+        
+        sbSearch.delegate = self
+        
+        tvTableView.delegate = self
+        tvTableView.dataSource = self
+        tvTableView.register(FirstCell.self)
+        
     }
     
     // MARK: - Actions
@@ -66,9 +75,9 @@ internal final class FirstViewController: UIViewController {
         case 0:
              NSLog("0")
         case 1:
-            NSLog("1")
+            presenter.didSelectSortByAlpabetically()
         case 2:
-            NSLog("2")
+            presenter.didSelectSortByNumberOfAppearances()
         default:
             break
         }
@@ -93,4 +102,57 @@ extension FirstViewController: FirstViewProtocol {
         vwContainer.isHidden = selected
         
     }
+    
+    func update(with documents: [DocumentModel]) {
+        
+        self.documents = documents
+        tvTableView.reloadData()
+        
+    }
+}
+
+extension FirstViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        presenter.searchTextDidChange(text: searchText)
+    }
+    
+    
+}
+
+// MARK: - UITableViewDataSource & UITableViewDelegate
+
+extension FirstViewController: UITableViewDataSource, UITableViewDelegate {
+
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return documents.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let section = documents[section]
+        return section.name
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44 //To remove noise warning
+    }
+    
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
+        let section = documents[section]
+        return section.words.count
+    }
+
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cell = tableView.dequeueReusableCell(FirstCell.self, for: indexPath)
+        let section = documents[indexPath.section]
+        let rowInSection = section.words[indexPath.row]
+        cell.bind(with: rowInSection)
+        
+        return cell
+    }
+
 }
