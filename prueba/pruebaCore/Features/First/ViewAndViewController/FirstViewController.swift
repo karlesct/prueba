@@ -73,7 +73,7 @@ internal final class FirstViewController: UIViewController {
 
         switch sender.selectedSegmentIndex {
         case 0:
-             NSLog("0")
+            presenter.didSelectSortByPosition()
         case 1:
             presenter.didSelectSortByAlpabetically()
         case 2:

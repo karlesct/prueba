@@ -21,6 +21,7 @@ internal protocol FirstPresenterProtocol: class {
     func loadView()
     func didSelectOpenPicker()
     func searchTextDidChange(text: String)
+    func didSelectSortByPosition()
     func didSelectSortByAlpabetically()
     func didSelectSortByNumberOfAppearances()
 
@@ -59,10 +60,6 @@ internal final class FirstPresenter: FirstPresenterProtocol {
 
     func searchTextDidChange(text: String) {
 
-        //        var filtered = text.isEmpty
-        //            ? documentsAll
-        //            : documentsAll.filter{$0.words[0].word.range(of: text.lowercased()) != nil}
-
         var document: [DocumentModel] = []
 
         if text.isEmpty {
@@ -83,16 +80,34 @@ internal final class FirstPresenter: FirstPresenterProtocol {
         view?.update(with: document)
     }
 
-    func didSelectSortByAlpabetically() {
-
-        //        let sorted = documentsFiltered.sorted(by: { $0.words[0].word < $1.words[0].word })
-        //        view?.update(with: sorted)
+    func didSelectSortByPosition() {
 
         var document: [DocumentModel] = []
 
         for var item in documentsFiltered {
 
-            item.words = item.words.sorted(by: { $0.word < $1.word })//.filter{ $0.word.range(of: text.lowercased()) != nil }
+            item.words = item.words.sorted(by: {
+                guard let first = $0.position else { return true }
+                guard let second = $1.position else { return false }
+
+                return first < second
+            })
+            document.append(item)
+        }
+
+        documentsFiltered = document
+
+        view?.update(with: document)
+
+    }
+
+    func didSelectSortByAlpabetically() {
+
+        var document: [DocumentModel] = []
+
+        for var item in documentsFiltered {
+
+            item.words = item.words.sorted(by: { $0.word < $1.word })
             document.append(item)
         }
 
@@ -104,13 +119,11 @@ internal final class FirstPresenter: FirstPresenterProtocol {
 
     func didSelectSortByNumberOfAppearances() {
 
-        //        let sorted = documentsFiltered.sorted(by: { $0.words[0].count < $1.words[0].count })
-        //        view?.update(with: sorted)
         var document: [DocumentModel] = []
 
         for var item in documentsFiltered {
 
-            item.words = item.words.sorted(by: { $0.count < $1.count })//.filter{ $0.word.range(of: text.lowercased()) != nil }
+            item.words = item.words.sorted(by: { $0.count < $1.count })
             document.append(item)
         }
 
@@ -119,32 +132,6 @@ internal final class FirstPresenter: FirstPresenterProtocol {
         view?.update(with: document)
     }
 }
-
-//protocol OptionalType {
-//    associatedtype Wrapped
-//    func toOptional() -> Wrapped?
-//}
-//extension Optional : OptionalType {
-//    func toOptional() -> Wrapped? {
-//        return self
-//    }
-//}
-//
-//extension Sequence where Iterator.Element: OptionalType {
-//    func unwrappedElements() -> [Iterator.Element.Wrapped] {
-//        return compactMap({ $0.toOptional() })
-//    }
-//    func filteredElements() -> [Iterator.Element] {
-//        return filter({ $0.toOptional() != nil })
-//    }
-//}
-//
-//extension Dictionary where Value: OptionalType {
-//    func unwrappedValues() -> [Key: Value.Wrapped] {
-//        return filter({ $0.value.toOptional() != nil })
-//           .mapValues({ $0.toOptional()! })
-//    }
-//}
 
 extension FirstPresenter: DocumentPickerDelegate {
 
@@ -163,6 +150,8 @@ extension FirstPresenter: DocumentPickerDelegate {
 
         documentsAll = documents
         documentsFiltered = documents
+
+        didSelectSortByPosition()
 
         view?.update(with: documentsFiltered)
 
