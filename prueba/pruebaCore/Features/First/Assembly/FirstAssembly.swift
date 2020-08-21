@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MobileCoreServices
 
 public final class FirstAssembly {
     
@@ -32,7 +33,13 @@ public final class FirstAssembly {
     
     func presenter() -> FirstPresenterProtocol {
 
-        return FirstPresenter()
+        return FirstPresenter(picker: buildPicker())
+    }
+    
+    func buildPicker() -> DocumentPickerProtocol {
+        
+        return DocumentPicker(types: [String(kUTTypePlainText)])
+        
     }
     
 }
