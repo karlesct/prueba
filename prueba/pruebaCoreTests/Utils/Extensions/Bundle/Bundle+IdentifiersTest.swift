@@ -12,7 +12,7 @@ import pruebaCore
 class Bundle_IdentifiersTest: XCTestCase {
 
     
-    func testBundleIdentifierAppIdentifierOK() {
+    func testBundleIdentifierAppIdentifierOK_01() {
         
         let bundleIdentifier = "es.carlescanadastorrents.prueba"
         
@@ -20,25 +20,9 @@ class Bundle_IdentifiersTest: XCTestCase {
         
     }
     
-    func testBundleIdentifierAppIdentifierKO() {
-        
-        let bundleIdentifier = "es.carlescanadastorrents.prueba1"
-        
-        XCTAssertEqual(Bundle.AppIdentifier?.bundleIdentifier, bundleIdentifier)
-        
-    }
-    
-    func testBundleIdentifierCoreIdentifierOK() {
+    func testBundleIdentifierCoreIdentifierOK_02() {
         
         let bundleIdentifier = "es.carlescanadastorrents.pruebaCore"
-        
-        XCTAssertEqual(Bundle.CoreIdentifier?.bundleIdentifier, bundleIdentifier)
-        
-    }
-    
-    func testBundleIdentifierCoreIdentifierKO() {
-        
-        let bundleIdentifier = "es.carlescanadastorrents.pruebaCore1"
         
         XCTAssertEqual(Bundle.CoreIdentifier?.bundleIdentifier, bundleIdentifier)
         

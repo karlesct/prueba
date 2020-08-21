@@ -21,6 +21,7 @@
 		2700227624EFE6E600AFA7A2 /* Int+StringValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700227524EFE6E600AFA7A2 /* Int+StringValue.swift */; };
 		2700227B24EFEAF700AFA7A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2700227D24EFEAF700AFA7A2 /* Localizable.strings */; };
 		2700228224EFEEB200AFA7A2 /* Bundle+IdentifiersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700228124EFEEB200AFA7A2 /* Bundle+IdentifiersTest.swift */; };
+		2700228724F005F000AFA7A2 /* String+EmptyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700228624F005F000AFA7A2 /* String+EmptyTest.swift */; };
 		272570B624EE619000770CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272570B524EE619000770CBC /* AppDelegate.swift */; };
 		272570BF24EE619200770CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272570BE24EE619200770CBC /* Assets.xcassets */; };
 		272570C224EE619200770CBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272570C024EE619200770CBC /* LaunchScreen.storyboard */; };
@@ -115,6 +116,7 @@
 		2700227524EFE6E600AFA7A2 /* Int+StringValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+StringValue.swift"; sourceTree = "<group>"; };
 		2700227C24EFEAF700AFA7A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2700228124EFEEB200AFA7A2 /* Bundle+IdentifiersTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+IdentifiersTest.swift"; sourceTree = "<group>"; };
+		2700228624F005F000AFA7A2 /* String+EmptyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EmptyTest.swift"; sourceTree = "<group>"; };
 		272570B224EE619000770CBC /* prueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272570B524EE619000770CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272570BE24EE619200770CBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 		2700228524F0048800AFA7A2 /* Strings */ = {
 			isa = PBXGroup;
 			children = (
+				2700228624F005F000AFA7A2 /* String+EmptyTest.swift */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -803,6 +806,7 @@
 			files = (
 				2700228224EFEEB200AFA7A2 /* Bundle+IdentifiersTest.swift in Sources */,
 				2728AE7B24EE636C00302677 /* pruebaCoreTests.swift in Sources */,
+				2700228724F005F000AFA7A2 /* String+EmptyTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
