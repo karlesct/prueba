@@ -15,31 +15,34 @@ public protocol DocumentPickerDelegate: class {
     
 }
 
-public class DocumentPicker: NSObject {
+public protocol DocumentPickerProtocol {
+    
+    var delegate: DocumentPickerDelegate? { get set }
+    
+    func openDocumentPicker()
+    
+}
+
+public class DocumentPicker: NSObject, DocumentPickerProtocol {
     
     // MARK: Fields
     
-    private weak var viewController: UIViewController?
-    private weak var delegate: DocumentPickerDelegate?
+    public weak var delegate: DocumentPickerDelegate?
     
     private var types: [String]?
     
     // MARK: - Constructor
     
-    public init(viewController: UIViewController,
-                types: [String],
-                delegate: DocumentPickerDelegate) {
+    public init(types: [String]) {
         
-        self.viewController = viewController
         self.types = types
-        self.delegate = delegate
     }
     
     // MARK: - Accessible methods
     
     public func openDocumentPicker() {
         
-        guard let viewController = viewController,
+        guard let viewController = UIViewController().getTopViewController,
             let types = types else { return }
         
         let documentPickerViewController = UIDocumentPickerViewController(documentTypes: types, in: .import)
@@ -54,6 +57,8 @@ public class DocumentPicker: NSObject {
         viewController.present(documentPickerViewController, animated: true, completion: nil)
         
     }
+    
+    
 }
 
 extension DocumentPicker: UIDocumentPickerDelegate {
