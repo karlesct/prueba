@@ -32,6 +32,8 @@
 		270022A124F0129900AFA7A2 /* NibLoadableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270022A024F0129900AFA7A2 /* NibLoadableTest.swift */; };
 		270022A324F012D600AFA7A2 /* ReusableCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270022A224F012D600AFA7A2 /* ReusableCellTest.swift */; };
 		270022A724F01B7400AFA7A2 /* WordModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270022A624F01B7400AFA7A2 /* WordModelTest.swift */; };
+		270022AC24F0269200AFA7A2 /* pruebaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270022AB24F0269200AFA7A2 /* pruebaUITests.swift */; };
+		270022AE24F026B000AFA7A2 /* pruebaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270022AD24F026B000AFA7A2 /* pruebaTests.swift */; };
 		272570B624EE619000770CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272570B524EE619000770CBC /* AppDelegate.swift */; };
 		272570BF24EE619200770CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272570BE24EE619200770CBC /* Assets.xcassets */; };
 		272570C224EE619200770CBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272570C024EE619200770CBC /* LaunchScreen.storyboard */; };
@@ -133,6 +135,8 @@
 		270022A024F0129900AFA7A2 /* NibLoadableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableTest.swift; sourceTree = "<group>"; };
 		270022A224F012D600AFA7A2 /* ReusableCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCellTest.swift; sourceTree = "<group>"; };
 		270022A624F01B7400AFA7A2 /* WordModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModelTest.swift; sourceTree = "<group>"; };
+		270022AB24F0269200AFA7A2 /* pruebaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaUITests.swift; sourceTree = "<group>"; };
+		270022AD24F026B000AFA7A2 /* pruebaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaTests.swift; sourceTree = "<group>"; };
 		272570B224EE619000770CBC /* prueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272570B524EE619000770CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272570BE24EE619200770CBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -399,6 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				272570CE24EE619200770CBC /* Info.plist */,
+				270022AD24F026B000AFA7A2 /* pruebaTests.swift */,
 			);
 			path = pruebaTests;
 			sourceTree = "<group>";
@@ -407,6 +412,7 @@
 			isa = PBXGroup;
 			children = (
 				272570D924EE619200770CBC /* Info.plist */,
+				270022AB24F0269200AFA7A2 /* pruebaUITests.swift */,
 			);
 			path = pruebaUITests;
 			sourceTree = "<group>";
@@ -729,10 +735,12 @@
 					};
 					272570C724EE619200770CBC = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 272570B124EE619000770CBC;
 					};
 					272570D224EE619200770CBC = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 272570B124EE619000770CBC;
 					};
 					2728AE6A24EE636B00302677 = {
@@ -847,6 +855,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270022AE24F026B000AFA7A2 /* pruebaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,6 +863,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270022AC24F0269200AFA7A2 /* pruebaUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1109,6 +1119,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = pruebaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -1119,6 +1130,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.carlescanadastorrents.pruebaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/prueba.app/prueba";
@@ -1130,6 +1142,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = pruebaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -1150,6 +1163,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = pruebaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1159,6 +1173,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.carlescanadastorrents.pruebaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = prueba;
@@ -1169,6 +1184,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = pruebaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
