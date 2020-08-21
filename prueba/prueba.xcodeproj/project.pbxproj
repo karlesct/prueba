@@ -34,6 +34,8 @@
 		270022A724F01B7400AFA7A2 /* WordModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270022A624F01B7400AFA7A2 /* WordModelTest.swift */; };
 		270022AC24F0269200AFA7A2 /* pruebaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270022AB24F0269200AFA7A2 /* pruebaUITests.swift */; };
 		270022AE24F026B000AFA7A2 /* pruebaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270022AD24F026B000AFA7A2 /* pruebaTests.swift */; };
+		270022B024F029A100AFA7A2 /* DocumentModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270022AF24F029A100AFA7A2 /* DocumentModelTest.swift */; };
+		270022B424F02C7200AFA7A2 /* UIColor+HexTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270022B324F02C7200AFA7A2 /* UIColor+HexTest.swift */; };
 		272570B624EE619000770CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272570B524EE619000770CBC /* AppDelegate.swift */; };
 		272570BF24EE619200770CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272570BE24EE619200770CBC /* Assets.xcassets */; };
 		272570C224EE619200770CBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272570C024EE619200770CBC /* LaunchScreen.storyboard */; };
@@ -137,6 +139,8 @@
 		270022A624F01B7400AFA7A2 /* WordModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModelTest.swift; sourceTree = "<group>"; };
 		270022AB24F0269200AFA7A2 /* pruebaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaUITests.swift; sourceTree = "<group>"; };
 		270022AD24F026B000AFA7A2 /* pruebaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaTests.swift; sourceTree = "<group>"; };
+		270022AF24F029A100AFA7A2 /* DocumentModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentModelTest.swift; sourceTree = "<group>"; };
+		270022B324F02C7200AFA7A2 /* UIColor+HexTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexTest.swift"; sourceTree = "<group>"; };
 		272570B224EE619000770CBC /* prueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272570B524EE619000770CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272570BE24EE619200770CBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -279,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				2700229724F00F1900AFA7A2 /* Int */,
+				270022B224F02BC000AFA7A2 /* Colors */,
 				2700228E24F00D2700AFA7A2 /* TableView */,
 				2700228524F0048800AFA7A2 /* Strings */,
 				2700228024EFEE8F00AFA7A2 /* Bundle */,
@@ -359,8 +364,25 @@
 			isa = PBXGroup;
 			children = (
 				270022A624F01B7400AFA7A2 /* WordModelTest.swift */,
+				270022AF24F029A100AFA7A2 /* DocumentModelTest.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		270022B124F02BAC00AFA7A2 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				2728AE8A24EE669300302677 /* CoreAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		270022B224F02BC000AFA7A2 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				270022B324F02C7200AFA7A2 /* UIColor+HexTest.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 		272570A924EE619000770CBC = {
@@ -420,7 +442,7 @@
 		2728AE6C24EE636B00302677 /* pruebaCore */ = {
 			isa = PBXGroup;
 			children = (
-				2728AE8A24EE669300302677 /* CoreAssembly.swift */,
+				270022B124F02BAC00AFA7A2 /* Assembly */,
 				275B50D324EECD5000129071 /* Features */,
 				2700227824EFEAA900AFA7A2 /* Resources */,
 				2728AE9624EE6E9D00302677 /* Utils */,
@@ -902,6 +924,7 @@
 			files = (
 				2700228224EFEEB200AFA7A2 /* Bundle+IdentifiersTest.swift in Sources */,
 				2700229424F00DB700AFA7A2 /* TestCell.swift in Sources */,
+				270022B424F02C7200AFA7A2 /* UIColor+HexTest.swift in Sources */,
 				270022A324F012D600AFA7A2 /* ReusableCellTest.swift in Sources */,
 				270022A124F0129900AFA7A2 /* NibLoadableTest.swift in Sources */,
 				2700229B24F00F5400AFA7A2 /* Int+StringValueTest.swift in Sources */,
@@ -910,6 +933,7 @@
 				2700228B24F0082F00AFA7A2 /* String+WordAndAppearanceTest.swift in Sources */,
 				2700229024F00D4700AFA7A2 /* TableView+ReusableCellTest.swift in Sources */,
 				2700228924F006EC00AFA7A2 /* String+LocalizedTest.swift in Sources */,
+				270022B024F029A100AFA7A2 /* DocumentModelTest.swift in Sources */,
 				2700228724F005F000AFA7A2 /* String+EmptyTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

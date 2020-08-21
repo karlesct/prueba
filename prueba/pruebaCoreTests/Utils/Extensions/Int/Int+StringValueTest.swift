@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import pruebaCore
 
 class Int_StringValueTest: XCTestCase {
 
