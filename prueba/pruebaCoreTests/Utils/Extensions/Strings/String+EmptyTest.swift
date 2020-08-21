@@ -7,11 +7,11 @@
 //
 
 import XCTest
-import pruebaCore
+@testable import pruebaCore
 
 class String_EmptyTest: XCTestCase {
 
-    func testEmptyOK_01() {
+    func testEmpty_01() {
         
         XCTAssertEqual(.empty, "")
         

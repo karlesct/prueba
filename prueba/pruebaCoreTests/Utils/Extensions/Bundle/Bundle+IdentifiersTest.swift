@@ -7,12 +7,12 @@
 //
 
 import XCTest
-import pruebaCore
+@testable import pruebaCore
 
 class Bundle_IdentifiersTest: XCTestCase {
 
     
-    func testBundleIdentifierAppIdentifierOK_01() {
+    func testBundleIdentifier_01() {
         
         let bundleIdentifier = "es.carlescanadastorrents.prueba"
         
@@ -20,7 +20,7 @@ class Bundle_IdentifiersTest: XCTestCase {
         
     }
     
-    func testBundleIdentifierCoreIdentifierOK_02() {
+    func testBundleIdentifier_02() {
         
         let bundleIdentifier = "es.carlescanadastorrents.pruebaCore"
         
