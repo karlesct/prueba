@@ -1,5 +1,5 @@
 //
-//  UITableView+ReusableCell.swift
+//  TableView+ReusableCell.swift
 //  pruebaCore
 //
 //  Created by Carles Cañadas Torrents on 21/08/2020.
