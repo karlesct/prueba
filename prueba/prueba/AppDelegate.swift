@@ -30,6 +30,8 @@ extension AppDelegate {
     
     func appSetup() {
         
+        window = appAssembly.window
+        
         let initialViewController = appAssembly.coreAssembly.firstAssembly.viewController()
 
         appAssembly.navigationController.pushViewController(initialViewController,
