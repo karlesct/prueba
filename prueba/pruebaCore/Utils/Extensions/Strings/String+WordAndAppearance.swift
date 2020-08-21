@@ -10,16 +10,16 @@ import Foundation
 
 public extension String {
     var wordAndAppearance: [String: Int] {
-        
+
         let range: Range<Index> = self.startIndex..<self.endIndex
         var item = [String: Int]()
-        
-        self.lowercased().enumerateSubstrings(in: range, options: [.byWords], { word, _, _, _ -> () in
+
+        self.lowercased().enumerateSubstrings(in: range, options: [.byWords], { word, _, _, _ -> Void in
             guard let word = word else { return }
-            
+
             item[word] = (item[word] ?? 0) + 1
         })
-        
+
         return item
     }
 }

@@ -9,15 +9,15 @@
 import Foundation
 
 public struct WordModel {
-    
+
     var word: String
     var count: Int
     var position: Int?
-    
+
     public init(word: String,
                 count: Int,
                 position: Int?) {
-        
+
         self.word = word
         self.count = count
         self.position = position

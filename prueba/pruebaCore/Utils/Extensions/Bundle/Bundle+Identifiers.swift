@@ -7,21 +7,21 @@
 //
 
 public extension Bundle {
-    
+
     private enum Constants {
         static let baseIdentifier = "es.carlescanadastorrents."
         static let AppIdentifier = baseIdentifier + "prueba"
         static let CoreIdentifier = baseIdentifier + "pruebaCore"
     }
-    
+
     // MARK: - Properties
-    
+
     static var AppIdentifier: Bundle? {
         return Bundle(identifier: Constants.AppIdentifier)
     }
-    
+
     static var CoreIdentifier: Bundle? {
         return Bundle(identifier: Constants.CoreIdentifier)
     }
-    
+
 }

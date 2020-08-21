@@ -9,13 +9,13 @@
 import Foundation
 
 public struct DocumentModel {
-    
+
     var name: String
     var words: [WordModel] = []
-    
+
     public init(name: String,
                 words: [WordModel]) {
-        
+
         self.name = name
         self.words = words
     }

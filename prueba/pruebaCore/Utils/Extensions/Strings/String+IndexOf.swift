@@ -9,13 +9,13 @@
 import Foundation
 
 public extension String {
-    
+
     func getIndexOf(text: String) -> Int? {
-        
+
         guard let range: Range<Index> = self.range(of: text) else { return nil }
-        
+
         let index: Int = self.distance(from: self.startIndex, to: range.lowerBound)
-        
+
         return index
     }
 }

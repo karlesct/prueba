@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIViewController {
-    
+
     var getTopViewController: UIViewController? {
         let appDelegate = UIApplication.shared.delegate
         if let window = appDelegate?.window {
@@ -17,6 +17,5 @@ extension UIViewController {
         }
         return nil
     }
-    
-    
+
 }

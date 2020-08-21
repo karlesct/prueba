@@ -12,26 +12,26 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Fields
-    
+
     private let appAssembly = AppAssembly()
     var window: UIWindow?
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+
         appSetup()
-        
+
         return true
     }
 
 }
 
 extension AppDelegate {
-    
+
     func appSetup() {
-        
+
         window = appAssembly.window
-        
+
         let initialViewController = appAssembly.coreAssembly.firstAssembly.viewController()
 
         appAssembly.navigationController.pushViewController(initialViewController,
@@ -40,7 +40,7 @@ extension AppDelegate {
         appAssembly.window.rootViewController = appAssembly.navigationController
 
         appAssembly.window.makeKeyAndVisible()
-        
+
     }
-    
+
 }

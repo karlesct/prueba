@@ -10,36 +10,36 @@ import UIKit
 import MobileCoreServices
 
 public final class FirstAssembly {
-    
+
     // MARK: - Properties
-    
+
     private let navigationController: UINavigationController
-    
+
     // MARK: - Init
-    
+
     public init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
-    
+
     // MARK: - Public Methods
-    
+
     public func viewController() -> UIViewController {
-        
+
         return FirstViewController(presenter: presenter())
-        
+
     }
-    
+
     // MARK: - Internal Methods
-    
+
     func presenter() -> FirstPresenterProtocol {
 
         return FirstPresenter(picker: buildPicker())
     }
-    
+
     func buildPicker() -> DocumentPickerProtocol {
-        
+
         return DocumentPicker(types: [String(kUTTypePlainText)])
-        
+
     }
-    
+
 }

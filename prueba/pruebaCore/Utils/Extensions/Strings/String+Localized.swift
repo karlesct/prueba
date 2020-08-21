@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     var localized: String {
         return NSLocalizedString(self,
                                  tableName: "Localizable",
@@ -15,5 +15,5 @@ public extension String {
                                  value: "**\(self)**",
             comment: "")
     }
-    
+
 }

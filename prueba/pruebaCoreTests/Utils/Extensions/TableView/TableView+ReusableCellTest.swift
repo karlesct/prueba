@@ -12,13 +12,13 @@ import XCTest
 class TableView_ReusableCellTest: XCTestCase {
 
     var tableView: UITableView!
-    
+
     override func setUp() {
         super.setUp()
 
         tableView = UITableView()
     }
-    
+
     func testReusableCell_01() {
 
         tableView.register(TestCell.self)

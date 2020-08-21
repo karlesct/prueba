@@ -12,9 +12,9 @@ import XCTest
 class String_EmptyTest: XCTestCase {
 
     func testEmpty_01() {
-        
+
         XCTAssertEqual(.empty, "")
-        
+
     }
 
 }

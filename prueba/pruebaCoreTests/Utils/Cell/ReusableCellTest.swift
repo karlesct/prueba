@@ -9,11 +9,11 @@
 import XCTest
 
 class ReusableCellTest: XCTestCase {
-    
+
     func testReusableCell_01() {
-        
+
         let reuseIdentifier = TestCell.reuseIdentifier
         XCTAssertEqual(reuseIdentifier, "TestCell")
     }
-    
+
 }

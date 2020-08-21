@@ -35,10 +35,7 @@
 		272570B624EE619000770CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272570B524EE619000770CBC /* AppDelegate.swift */; };
 		272570BF24EE619200770CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272570BE24EE619200770CBC /* Assets.xcassets */; };
 		272570C224EE619200770CBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272570C024EE619200770CBC /* LaunchScreen.storyboard */; };
-		272570CD24EE619200770CBC /* pruebaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272570CC24EE619200770CBC /* pruebaTests.swift */; };
-		272570D824EE619200770CBC /* pruebaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272570D724EE619200770CBC /* pruebaUITests.swift */; };
 		2728AE7424EE636C00302677 /* pruebaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2728AE6B24EE636B00302677 /* pruebaCore.framework */; };
-		2728AE7B24EE636C00302677 /* pruebaCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2728AE7A24EE636C00302677 /* pruebaCoreTests.swift */; };
 		2728AE7D24EE636C00302677 /* pruebaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 2728AE6D24EE636B00302677 /* pruebaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2728AE8024EE636C00302677 /* pruebaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2728AE6B24EE636B00302677 /* pruebaCore.framework */; };
 		2728AE8124EE636C00302677 /* pruebaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2728AE6B24EE636B00302677 /* pruebaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -142,16 +139,13 @@
 		272570C124EE619200770CBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		272570C324EE619200770CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272570C824EE619200770CBC /* pruebaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pruebaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		272570CC24EE619200770CBC /* pruebaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaTests.swift; sourceTree = "<group>"; };
 		272570CE24EE619200770CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272570D324EE619200770CBC /* pruebaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pruebaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		272570D724EE619200770CBC /* pruebaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaUITests.swift; sourceTree = "<group>"; };
 		272570D924EE619200770CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2728AE6B24EE636B00302677 /* pruebaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pruebaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2728AE6D24EE636B00302677 /* pruebaCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pruebaCore.h; sourceTree = "<group>"; };
 		2728AE6E24EE636B00302677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2728AE7324EE636B00302677 /* pruebaCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pruebaCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2728AE7A24EE636C00302677 /* pruebaCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebaCoreTests.swift; sourceTree = "<group>"; };
 		2728AE7C24EE636C00302677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2728AE8A24EE669300302677 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
 		2728AE8C24EE676800302677 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
@@ -404,7 +398,6 @@
 		272570CB24EE619200770CBC /* pruebaTests */ = {
 			isa = PBXGroup;
 			children = (
-				272570CC24EE619200770CBC /* pruebaTests.swift */,
 				272570CE24EE619200770CBC /* Info.plist */,
 			);
 			path = pruebaTests;
@@ -413,7 +406,6 @@
 		272570D624EE619200770CBC /* pruebaUITests */ = {
 			isa = PBXGroup;
 			children = (
-				272570D724EE619200770CBC /* pruebaUITests.swift */,
 				272570D924EE619200770CBC /* Info.plist */,
 			);
 			path = pruebaUITests;
@@ -437,7 +429,6 @@
 				270022A424F0137100AFA7A2 /* Features */,
 				2700229124F00DA100AFA7A2 /* TestViews */,
 				2700227E24EFEE7C00AFA7A2 /* Utils */,
-				2728AE7A24EE636C00302677 /* pruebaCoreTests.swift */,
 				2728AE7C24EE636C00302677 /* Info.plist */,
 			);
 			path = pruebaCoreTests;
@@ -638,6 +629,7 @@
 				272570AF24EE619000770CBC /* Frameworks */,
 				272570B024EE619000770CBC /* Resources */,
 				2728AE8224EE636C00302677 /* Embed Frameworks */,
+				270022A824F01E0800AFA7A2 /* Run Script - SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -819,6 +811,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		270022A824F01E0800AFA7A2 /* Run Script - SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		272570AE24EE619000770CBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -834,7 +847,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272570CD24EE619200770CBC /* pruebaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,7 +854,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272570D824EE619200770CBC /* pruebaUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -881,7 +892,6 @@
 			files = (
 				2700228224EFEEB200AFA7A2 /* Bundle+IdentifiersTest.swift in Sources */,
 				2700229424F00DB700AFA7A2 /* TestCell.swift in Sources */,
-				2728AE7B24EE636C00302677 /* pruebaCoreTests.swift in Sources */,
 				270022A324F012D600AFA7A2 /* ReusableCellTest.swift in Sources */,
 				270022A124F0129900AFA7A2 /* NibLoadableTest.swift in Sources */,
 				2700229B24F00F5400AFA7A2 /* Int+StringValueTest.swift in Sources */,

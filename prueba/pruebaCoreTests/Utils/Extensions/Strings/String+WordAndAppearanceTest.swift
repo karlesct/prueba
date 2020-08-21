@@ -23,19 +23,19 @@ class String_WordAndAppearanceTest: XCTestCase {
         pedro
         Hugo
         """
-        
-        okResult = ["alicia":6,
+
+        okResult = ["alicia": 6,
                     "carlos": 3,
                     "pedro": 6,
                     "hugo": 3]
-        
+
     }
-    
+
    func testWordAndAppearance_01() {
-    
+
         let test = text.wordAndAppearance
-        
+
         XCTAssertEqual(test, okResult)
     }
-    
+
 }

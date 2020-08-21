@@ -10,21 +10,21 @@ import XCTest
 @testable import pruebaCore
 
 class WordModelTest: XCTestCase {
-    
+
     var wordModel: WordModel!
-    
+
     override func setUp() {
         super.setUp()
-        
+
         wordModel = WordModel(word: "test", count: 6, position: 10)
-        
+
     }
-    
+
     func testWordAndAppearance_01() {
-        
+
         XCTAssertEqual(wordModel.word, "test")
         XCTAssertEqual(wordModel.count, 6)
         XCTAssertEqual(wordModel.position, 10)
     }
-    
+
 }
