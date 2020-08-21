@@ -31,6 +31,7 @@
 		2700229B24F00F5400AFA7A2 /* Int+StringValueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700229A24F00F5400AFA7A2 /* Int+StringValueTest.swift */; };
 		270022A124F0129900AFA7A2 /* NibLoadableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270022A024F0129900AFA7A2 /* NibLoadableTest.swift */; };
 		270022A324F012D600AFA7A2 /* ReusableCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270022A224F012D600AFA7A2 /* ReusableCellTest.swift */; };
+		270022A724F01B7400AFA7A2 /* WordModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270022A624F01B7400AFA7A2 /* WordModelTest.swift */; };
 		272570B624EE619000770CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272570B524EE619000770CBC /* AppDelegate.swift */; };
 		272570BF24EE619200770CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272570BE24EE619200770CBC /* Assets.xcassets */; };
 		272570C224EE619200770CBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272570C024EE619200770CBC /* LaunchScreen.storyboard */; };
@@ -134,6 +135,7 @@
 		2700229A24F00F5400AFA7A2 /* Int+StringValueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+StringValueTest.swift"; sourceTree = "<group>"; };
 		270022A024F0129900AFA7A2 /* NibLoadableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableTest.swift; sourceTree = "<group>"; };
 		270022A224F012D600AFA7A2 /* ReusableCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCellTest.swift; sourceTree = "<group>"; };
+		270022A624F01B7400AFA7A2 /* WordModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModelTest.swift; sourceTree = "<group>"; };
 		272570B224EE619000770CBC /* prueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272570B524EE619000770CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		272570BE24EE619200770CBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -350,8 +352,17 @@
 		270022A424F0137100AFA7A2 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				270022A524F01B3C00AFA7A2 /* Model */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		270022A524F01B3C00AFA7A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				270022A624F01B7400AFA7A2 /* WordModelTest.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		272570A924EE619000770CBC = {
@@ -875,6 +886,7 @@
 				270022A124F0129900AFA7A2 /* NibLoadableTest.swift in Sources */,
 				2700229B24F00F5400AFA7A2 /* Int+StringValueTest.swift in Sources */,
 				2700228D24F00B3800AFA7A2 /* String+IndexOfTest.swift in Sources */,
+				270022A724F01B7400AFA7A2 /* WordModelTest.swift in Sources */,
 				2700228B24F0082F00AFA7A2 /* String+WordAndAppearanceTest.swift in Sources */,
 				2700229024F00D4700AFA7A2 /* TableView+ReusableCellTest.swift in Sources */,
 				2700228924F006EC00AFA7A2 /* String+LocalizedTest.swift in Sources */,
