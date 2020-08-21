@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2700225924EFA05E00AFA7A2 /* DocumentConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700225824EFA05E00AFA7A2 /* DocumentConverter.swift */; };
+		2700225B24EFA08B00AFA7A2 /* DocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700225A24EFA08B00AFA7A2 /* DocumentModel.swift */; };
+		2700225D24EFA0A600AFA7A2 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700225C24EFA0A600AFA7A2 /* WordModel.swift */; };
+		2700226024EFAC9300AFA7A2 /* Window+VisibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700225F24EFAC9300AFA7A2 /* Window+VisibleViewController.swift */; };
+		2700226324EFACD300AFA7A2 /* ViewController+GetTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2700226224EFACD300AFA7A2 /* ViewController+GetTopViewController.swift */; };
 		272570B624EE619000770CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272570B524EE619000770CBC /* AppDelegate.swift */; };
-		272570BA24EE619000770CBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272570B924EE619000770CBC /* ViewController.swift */; };
 		272570BF24EE619200770CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272570BE24EE619200770CBC /* Assets.xcassets */; };
 		272570C224EE619200770CBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272570C024EE619200770CBC /* LaunchScreen.storyboard */; };
 		272570CD24EE619200770CBC /* pruebaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272570CC24EE619200770CBC /* pruebaTests.swift */; };
@@ -88,9 +92,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2700225824EFA05E00AFA7A2 /* DocumentConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentConverter.swift; sourceTree = "<group>"; };
+		2700225A24EFA08B00AFA7A2 /* DocumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentModel.swift; sourceTree = "<group>"; };
+		2700225C24EFA0A600AFA7A2 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		2700225F24EFAC9300AFA7A2 /* Window+VisibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Window+VisibleViewController.swift"; sourceTree = "<group>"; };
+		2700226224EFACD300AFA7A2 /* ViewController+GetTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+GetTopViewController.swift"; sourceTree = "<group>"; };
 		272570B224EE619000770CBC /* prueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272570B524EE619000770CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		272570B924EE619000770CBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		272570BE24EE619200770CBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		272570C124EE619200770CBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		272570C324EE619200770CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -164,6 +172,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2700225E24EFAC6E00AFA7A2 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				2700225F24EFAC9300AFA7A2 /* Window+VisibleViewController.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		2700226124EFACB700AFA7A2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2700226224EFACD300AFA7A2 /* ViewController+GetTopViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		272570A924EE619000770CBC = {
 			isa = PBXGroup;
 			children = (
@@ -196,7 +220,6 @@
 				2728AE8E24EE686400302677 /* Resources */,
 				2728AE9024EE6CB900302677 /* Utils */,
 				272570B524EE619000770CBC /* AppDelegate.swift */,
-				272570B924EE619000770CBC /* ViewController.swift */,
 			);
 			path = prueba;
 			sourceTree = "<group>";
@@ -310,6 +333,8 @@
 		2728AE9724EE6EA700302677 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2700226124EFACB700AFA7A2 /* ViewController */,
+				2700225E24EFAC6E00AFA7A2 /* Window */,
 				275B50C024EE730200129071 /* Colors */,
 				275B50BB24EE710E00129071 /* Strings */,
 				275B50B824EE6FEC00129071 /* Bundle */,
@@ -399,6 +424,9 @@
 		275B50D924EEE0B200129071 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2700225824EFA05E00AFA7A2 /* DocumentConverter.swift */,
+				2700225A24EFA08B00AFA7A2 /* DocumentModel.swift */,
+				2700225C24EFA0A600AFA7A2 /* WordModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -616,7 +644,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272570BA24EE619000770CBC /* ViewController.swift in Sources */,
 				2728AE8D24EE676800302677 /* AppAssembly.swift in Sources */,
 				2728AE9524EE6D7C00302677 /* PruebaNavigationController.swift in Sources */,
 				272570B624EE619000770CBC /* AppDelegate.swift in Sources */,
@@ -643,17 +670,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2700225924EFA05E00AFA7A2 /* DocumentConverter.swift in Sources */,
+				2700226024EFAC9300AFA7A2 /* Window+VisibleViewController.swift in Sources */,
 				275B50BA24EE700900129071 /* Bundle+Identifiers.swift in Sources */,
 				275B50D224EEC5EC00129071 /* String+WordAndAppearance.swift in Sources */,
 				275B50CB24EE813400129071 /* DocumentPicker.swift in Sources */,
+				2700225D24EFA0A600AFA7A2 /* WordModel.swift in Sources */,
 				275B50DE24EEE36900129071 /* FirstViewController.swift in Sources */,
 				275B50BD24EE712500129071 /* String+Empty.swift in Sources */,
 				275B50BF24EE716400129071 /* String+Localized.swift in Sources */,
 				2728AE8B24EE669300302677 /* CoreAssembly.swift in Sources */,
 				275B50D024EEB0CD00129071 /* LineReader.swift in Sources */,
 				275B50C424EE73C200129071 /* PruebaColors.swift in Sources */,
+				2700225B24EFA08B00AFA7A2 /* DocumentModel.swift in Sources */,
 				275B50D824EECDF400129071 /* FirstAssembly.swift in Sources */,
 				275B50DC24EEE28B00129071 /* FirstPresenter.swift in Sources */,
+				2700226324EFACD300AFA7A2 /* ViewController+GetTopViewController.swift in Sources */,
 				275B50C224EE737400129071 /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
